@@ -7,10 +7,10 @@
     <META NAME="Author" CONTENT="">
     <META NAME="Keywords" CONTENT="">
     <META NAME="Description" CONTENT="">
-        <link rel="stylesheet" href="stle.css">
     <style>
         html,
         body {
+            overflow: hidden;
             padding: 0;
             margin: 0;
             background: #000;
@@ -35,27 +35,22 @@
         @keyframes heart {
             0% {
                 transform: scale(1);
-                opacity: 0.8;
             }
             30% {
-                transform: scale(0.8);
-                opacity: 1;
-                
+                transform: scale(.8);
             }
+            /* 60% {
+                transform: scale(1.2);
+            } */
             100% {
                 transform: scale(1);
-                opacity: 0.8;
-
             }
         }
-    
     </style>
-    <div class="backGround"></div>
 </HEAD>
 
 <BODY>
-    
-    
+
     <canvas id="pinkboard">
         <canvas id="pinkboard">
         </canvas>
@@ -67,10 +62,10 @@
         var settings = {
             particles: {
                 length: 1500, // maximum amount of particles
-                duration: 1.5, // particle duration in sec
+                duration: 2, // particle duration in sec
                 velocity: 135, // particle velocity in pixels/sec
-                effect: -0.3, // play with this for a nice effect
-                size: 15, // particle size in pixels
+                effect: -0.35, // play with this for a nice effect
+                size: 14, // particle size in pixels
             },
         };
 
